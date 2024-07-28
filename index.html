@@ -1,0 +1,341 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indore Municipal Corporation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+   
+    <header>
+        <h1>INDORE MUNICIPAL CORPORATION</h1>
+    </header>
+
+    <marquee behavior="scroll" direction="left" style="background-color: #f3f6fa; color: rgb(22, 20, 20); padding: 10px; font-size: 1.2em;">
+        WELCOME ....India's Smartest & Cleanest City !!!!     ई-ऑफिस (E-Office):
+        Digital platform for administrative operations and public services.
+        सुविधाएं (Services):
+        Various digital services available to the public through the e-office system.
+        पंजीकरण (Registration):
+        Online registration for services and complaints.
+        आवेदन (Application):
+        Submission of online applications for various municipal services.
+        ट्रैकिंग (Tracking):
+        Real-time tracking of application status and service requests.
+        संपर्क (Contact):
+        Contact details for support and queries related to e-office services.
+        प्रस्ताव (Proposal):
+        Online submission of proposals for new projects or services.
+        शिकायत (Complaint):
+        Online portal for lodging complaints and grievances.
+        पारदर्शिता (Transparency):
+        Enhanced transparency in municipal operations and service delivery.
+        सहायता (Assistance):
+        Help and guidance available for using the e-office system.
+        अवकाश (Leave):
+        Online leave application and management for municipal employees.
+    </marquee>
+
+    
+    <div id="registration-container" class="container">
+        <h2>पंजीकरण</h2>
+        <form id="registrationForm">
+            <input type="text" id="reg-name" placeholder="Name" required>
+            <input type="password" id="reg-password" placeholder="Password" required>
+            <input type="date" id="reg-dob" placeholder="Date of Birth" required>
+            <input type="email" id="reg-email" placeholder="Email" required>
+            <button type="submit">Register</button>
+        </form>
+        <div id="registration-message" class="message"></div>
+        <button id="goToLogin" style="display:none;">Go to Login</button>
+    </div>
+
+    
+    <div id="login-container" class="container" style="display:none;">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="login-message" class="message"></div>
+        <button id="goToSignup">Go to Signup</button>
+        <button id="forgotPassword">Forgot Password?</button>
+    </div>
+
+    
+    <div id="forgot-password-container" class="container" style="display:none;">
+        <h2>Forgot Password</h2>
+        <form id="forgotPasswordForm">
+            <input type="email" id="forgot-email" placeholder="Email" required>
+            <button type="submit">Reset Password</button>
+        </form>
+        <div id="forgot-password-message" class="message"></div>
+        <button id="goToLoginFromForgot">Go to Login</button>
+    </div>
+
+    
+    <div id="main-content" style="display:none;">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#document-management">Document Management</a></li>
+                <li><a href="#workflow-automation">Workflow Automation</a></li>
+                <li><a href="#employee-collaboration">Employee Collaboration</a></li>
+                <li><a href="#public-services">Public Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div id="video">
+            <video width="100%" height="5%" controls autoplay="autoplay">
+                <source src= "./video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <section id="home">
+            <h2>Welcome to Indore Municipal Corporation</h2>
+            
+            <div class="section-container">
+                <div class="card">
+                    <img src="Images/c1.jpg" alt="Centralized Document Management">
+                    <div class="card-content">
+                        <h3>Centralized Document Management</h3>
+                        <p>Streamline your document workflows with our centralized system.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/ap2.jpg" alt="Automated Workflow Approvals">
+                    <div class="card-content">
+                        <h3>Automated Workflow Approvals</h3>
+                        <p>Efficiently manage approvals from initiation to completion.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/c.jpg" alt="Employee Collaboration">
+                    <div class="card-content">
+                        <h3>Employee Collaboration</h3>
+                        <p>Enhance teamwork with our collaboration tools.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" style="display:none;">
+            <h2>About Us</h2>
+            <p>The Indore Municipal Corporation is dedicated to serving the citizens of Indore with transparency and efficiency...</p>
+        </section>
+        <section id="services" style="display:none;">
+            <h2>Our Services</h2>
+            <p>Explore the wide range of services we offer to the residents of Indore...</p>
+        </section>
+        <section id="document-management" style="display:none;">
+            <h2>Document Management</h2>
+            <p>Our Document Management System allows easy storage, retrieval, and sharing of important documents...</p>
+        </section>
+        <section id="workflow-automation" style="display:none;">
+            <h2>Workflow Automation</h2>
+            <p>Streamline your approval processes with our workflow automation tools...</p>
+        </section>
+        <section id="employee-collaboration" style="display:none;">
+            <h2>Employee Collaboration</h2>
+            <p>Facilitate communication and teamwork among municipal employees...</p>
+        </section>
+        <section id="public-services" style="display:none;">
+            <h2>Public Services</h2>
+            <p>Enhance accessibility and transparency with our online public services...</p>
+        </section>
+        <section id="contact" style="display:none;">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any queries or support...</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Indore Municipal Corporation. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> -->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indore Municipal Corporation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+    <!-- Main Heading -->
+    <header>
+        <h1>INDORE MUNICIPAL CORPORATION</h1>
+    </header>
+
+    <marquee behavior="scroll" direction="left" style="background-color: #f3f6fa; color: rgb(22, 20, 20); padding: 10px; font-size: 1.2em;">
+        WELCOME ....India's Smartest & Cleanest City !!!!     ई-ऑफिस (E-Office):
+        Digital platform for administrative operations and public services.
+        सुविधाएं (Services):
+        Various digital services available to the public through the e-office system.
+        पंजीकरण (Registration):
+        Online registration for services and complaints.
+        आवेदन (Application):
+        Submission of online applications for various municipal services.
+        ट्रैकिंग (Tracking):
+        Real-time tracking of application status and service requests.
+        संपर्क (Contact):
+        Contact details for support and queries related to e-office services.
+        प्रस्ताव (Proposal):
+        Online submission of proposals for new projects or services.
+        शिकायत (Complaint):
+        Online portal for lodging complaints and grievances.
+        पारदर्शिता (Transparency):
+        Enhanced transparency in municipal operations and service delivery.
+        सहायता (Assistance):
+        Help and guidance available for using the e-office system.
+        अवकाश (Leave):
+        Online leave application and management for municipal employees.
+    </marquee>
+
+    <!-- Registration Container -->
+    <div id="registration-container" class="container">
+        <h2>पंजीकरण</h2>
+        <form id="registrationForm">
+            <input type="text" id="reg-name" placeholder="Name" required>
+            <input type="password" id="reg-password" placeholder="Password" required>
+            <input type="date" id="reg-dob" placeholder="Date of Birth" required>
+            <input type="email" id="reg-email" placeholder="Email" required>
+            <button type="submit">Register</button>
+        </form>
+        <div id="registration-message" class="message"></div>
+        <button id="goToLogin" style="display:none;">Go to Login</button>
+    </div>
+
+    <!-- Login Container -->
+    <div id="login-container" class="container" style="display:none;">
+        <h2>Login</h2>
+        <form id="loginForm">
+            <input type="email" id="login-email" placeholder="Email" required>
+            <input type="password" id="login-password" placeholder="Password" required>
+            <button type="submit">Login</button>
+        </form>
+        <div id="login-message" class="message"></div>
+        <button id="goToSignup">Go to Signup</button>
+        <button id="forgotPassword">Forgot Password?</button>
+    </div>
+
+    <!-- Forgot Password Container -->
+    <div id="forgot-password-container" class="container" style="display:none;">
+        <h2>Forgot Password</h2>
+        <form id="forgotPasswordForm">
+            <input type="email" id="forgot-email" placeholder="Email" required>
+            <button type="submit">Reset Password</button>
+        </form>
+        <div id="forgot-password-message" class="message"></div>
+        <button id="goToLoginFromForgot">Go to Login</button>
+    </div>
+
+    <!-- Main Content -->
+    <div id="main-content" style="display:none;">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#document-management">Document Management</a></li>
+                <li><a href="#workflow-automation">Workflow Automation</a></li>
+                <li><a href="#employee-collaboration">Employee Collaboration</a></li>
+                <li><a href="#public-services">Public Services</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div id="video">
+            <video width="100%" height="5%" controls autoplay="autoplay">
+                <source src= "./video.mp4" type="video/mp4">
+            </video>
+        </div>
+        <section id="home">
+            <h2>Welcome to Indore Municipal Corporation</h2>
+            
+            <div class="section-container">
+                <div class="card">
+                    <img src="Images/c1.jpg" alt="Centralized Document Management">
+                    <div class="card-content">
+                        <h3>Centralized Document Management</h3>
+                        <p>Streamline your document workflows with our centralized system.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/ap2.jpg" alt="Automated Workflow Approvals">
+                    <div class="card-content">
+                        <h3>Automated Workflow Approvals</h3>
+                        <p>Efficiently manage approvals from initiation to completion.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="Images/c.jpg" alt="Employee Collaboration">
+                    <div class="card-content">
+                        <h3>Employee Collaboration</h3>
+                        <p>Enhance teamwork with our collaboration tools.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="about" style="display:none;">
+            <h2>About Us</h2>
+            <p>The Indore Municipal Corporation is dedicated to serving the citizens of Indore with transparency and efficiency. Our mission is to provide top-notch municipal services and enhance the quality of life for our residents.</p>
+        </section>
+        <section id="services" style="display:none;">
+            <h2>Our Services</h2>
+            <p>Explore the wide range of services we offer to the residents of Indore, including water supply management, waste management, road maintenance, public health services, and more. Our goal is to ensure a clean, safe, and efficient city for everyone.</p>
+        </section>
+        <section id="document-management" style="display:none;">
+            <h2>Document Management</h2>
+            <p>Our Document Management System allows easy storage, retrieval, and sharing of important documents. The following documents are available for access and management:</p>
+            <ul>
+                <li><a href="#dob">Date of Birth Certificate</a></li>
+                <li><a href="#domicile">Domicile Certificate</a></li>
+                <li><a href="#income-certificate">Income Certificate</a></li>
+                <li><a href="#update-license">Update License</a></li>
+                <li><a href="#tax">Fill Tax as per Income Certificate</a></li>
+            </ul>
+            <h3>Common Documents for Minors</h3>
+            <ul>
+                <li><a href="#minor-dob">Minor's Date of Birth Certificate</a></li>
+                <li><a href="#minor-domicile">Minor's Domicile Certificate</a></li>
+                <li><a href="#minor-income-certificate">Minor's Income Certificate</a></li>
+            </ul>
+        </section>
+        <section id="workflow-automation" style="display:none;">
+            <h2>Workflow Automation</h2>
+            <p>Streamline your approval processes with our workflow automation tools. Automate repetitive tasks, reduce manual errors, and improve efficiency in municipal operations.</p>
+        </section>
+        <section id="employee-collaboration" style="display:none;">
+            <h2>Employee Collaboration</h2>
+            <p>Facilitate communication and teamwork among municipal employees with our collaboration tools. Share documents, schedule meetings, and manage projects seamlessly.</p>
+        </section>
+        <section id="public-services" style="display:none;">
+            <h2>Public Services</h2>
+            <p>Enhance accessibility and transparency with our online public services. Residents can access a variety of services including bill payments, service requests, and public information online.</p>
+        </section>
+        <section id="contact" style="display:none;">
+            <h2>Contact Us</h2>
+            <p>Get in touch with us for any queries or support. You can reach us through our contact form, email, or phone. We are here to assist you with all your municipal service needs.</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Indore Municipal Corporation. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
